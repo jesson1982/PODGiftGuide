@@ -1,0 +1,61 @@
+# GitHub Pages配置文件
+title: POD礼品指南
+email: contact@podgiftguide.com
+description: >-
+  个性化定制礼品专家 - 发现最适合您的个性化定制礼品，
+  包括定制毯子、枕头、T恤和马克杯等。
+baseurl: ""
+url: "https://your-pod-site.github.io"
+github_username: your-username
+
+# 编译选项
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# SEO优化
+social:
+  name: POD礼品指南
+  links:
+    - https://twitter.com/your-username
+    - https://github.com/your-username
+
+# 作者信息
+author:
+  name: POD礼品指南团队
+  email: contact@podgiftguide.com
+  social:
+    github: your-username
+    twitter: your-username
+
+# 分页设置（如果需要）
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# 时区设置
+timezone: Asia/Shanghai
+
+# 语言设置
+lang: zh-CN
+
+# 自定义变量
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "POD礼品指南团队"

@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Idea Generator - Tools - POD Gift Guide</title>
+    <meta name="description" content="Enter recipient information to get personalized gift recommendations. Making the selection of perfect gifts easier.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gift Idea Generator",
+      "description": "Enter recipient information to get personalized gift recommendations",
+      "applicationCategory": "Utilities",
+      "operatingSystem": "Any"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">POD Gift Guide</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/products/custom-blankets.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/guides/" class="nav-link">Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/tools/" class="nav-link active">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tool-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">Home</a> > <a href="/tools/">Tools</a> > Gift Idea Generator
+                </div>
+                <h1>Gift Idea Generator</h1>
+                <p>Enter recipient information to get personalized gift recommendations</p>
+            </div>
+        </section>
+
+        <section class="tool-content">
+            <div class="container">
+                <div class="tool-form-container">
+                    <div class="tool-form">
+                        <h2>Fill in Recipient Information</h2>
+                        <form id="giftGeneratorForm">
+                            <div class="form-group">
+                                <label for="recipientType">Recipient Type</label>
+                                <select id="recipientType" name="recipientType" required>
+                                    <option value="">Please Select</option>
+                                    <option value="family">Family</option>
+                                    <option value="friend">Friend</option>
+                                    <option value="colleague">Colleague</option>
+                                    <option value="partner">Partner</option>
+                                    <option value="child">Child</option>
+                                    <option value="pet">Pet</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="relationship">Specific Relationship</label>
+                                <select id="relationship" name="relationship" required>
+                                    <option value="">Please Select</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="grandparent">Grandparent</option>
+                                    <option value="spouse">Spouse</option>
+                                    <option value="child">Child</option>
+                                    <option value="bestFriend">Best Friend</option>
+                                    <option value="coworker">Coworker</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age Range</label>
+                                <select id="age" name="age" required>
+                                    <option value="">Please Select</option>
+                                    <option value="child">Child (0-12 years)</option>
+                                    <option value="teen">Teen (13-19 years)</option>
+                                    <option value="youngAdult">Young Adult (20-35 years)</option>
+                                    <option value="adult">Adult (36-59 years)</option>
+                                    <option value="senior">Senior (60+ years)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interests">Interests (Multiple Selection)</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                                    <label><input type="checkbox" name="interests" value="music"> Music</label>
+                                    <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                                    <label><input type="checkbox" name="interests" value="cooking"> Cooking</label>
+                                    <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+                                    <label><input type="checkbox" name="interests" value="art"> Art</label>
+                                    <label><input type="checkbox" name="interests" value="tech"> Tech</label>
+                                    <label><input type="checkbox" name="interests" value="pets"> Pets</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion" name="occasion" required>
+                                    <option value="">Please Select</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="holiday">Holiday</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="babyShower">Baby Shower</option>
+                                    <option value="condolence">Condolence</option>
+                                    <option value="thankYou">Thank You</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget" required>
+                                    <option value="">Please Select</option>
+                                    <option value="low">Economy (¥50-150)</option>
+                                    <option value="medium">Mid-range (¥150-300)</option>
+                                    <option value="high">Premium (¥300-500)</option>
+                                    <option value="premium">Luxury (¥500+)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Generate Gift Ideas</button>
+                        </form>
+                    </div>
+
+                    <div class="tool-results hidden" id="resultsSection">
+                        <h2>Gift Recommendations for You</h2>
+                        <div id="giftIdeasContainer">
+                            <!-- Results will be populated here -->
+                        </div>
+                        <button id="newSearchBtn" class="btn btn-secondary">New Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-examples">
+            <div class="container">
+                <h2>Usage Examples</h2>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h3>Example 1</h3>
+                        <p><strong>Recipient:</strong> Young female friend, loves music and art</p>
+                        <p><strong>Occasion:</strong> Birthday</p>
+                        <p><strong>Recommendation:</strong> Personalized music-themed mug, custom art-style T-shirt</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Example 2</h3>
+                        <p><strong>Recipient:</strong> Middle-aged father, enjoys cooking</p>
+                        <p><strong>Occasion:</strong> Father's Day</p>
+                        <p><strong>Recommendation:</strong> Custom apron, personalized dinnerware set</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Example 3</h3>
+                        <p><strong>Recipient:</strong> Elderly mother, loves traveling</p>
+                        <p><strong>Occasion:</strong> Anniversary</p>
+                        <p><strong>Recommendation:</strong> Travel-themed photo album, personalized blanket</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>POD Gift Guide</h3>
+                        <p>Providing you with professional personalized custom gift suggestions and guides</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/products/">Products</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Product Categories</h4>
+                        <ul>
+                            <li><a href="/products/custom-blankets.html">Custom Blankets</a></li>
+                            <li><a href="/products/custom-pillows.html">Custom Pillows</a></li>
+                            <li><a href="/products/custom-tshirts.html">Custom T-shirts</a></li>
+                            <li><a href="/products/custom-mugs.html">Custom Mugs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <p>Email: contact@podgiftguide.com</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 POD Gift Guide. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('giftGeneratorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const recipientType = document.getElementById('recipientType').value;
+            const relationship = document.getElementById('relationship').value;
+            const age = document.getElementById('age').value;
+            const occasion = document.getElementById('occasion').value;
+            const budget = document.getElementById('budget').value;
+            
+            // Get interests
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
+                                  .map(cb => cb.value);
+            
+            // Generate gift suggestions
+            const giftIdeas = generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget);
+            
+            // Display results
+            displayGiftIdeas(giftIdeas);
+        });
+        
+        function generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget) {
+            // This is the gift suggestion logic, simplified version
+            const ideas = [];
+            
+            // Generate suggestions based on different conditions
+            if (interests.includes('music')) {
+                ideas.push({
+                    product: "Custom Music Theme Mug",
+                    description: "Mug with favorite song lyrics or musician image",
+                    price: "¥45-89",
+                    relevance: "High"
+                });
+            }
+            
+            if (interests.includes('travel')) {
+                ideas.push({
+                    product: "Personalized Travel Blanket",
+                    description: "Comfortable blanket with favorite travel destination photos or maps",
+                    price: "¥159-299",
+                    relevance: "High"
+                });
+            }
+            
+            if (interests.includes('cooking')) {
+                ideas.push({
+                    product: "Custom Cooking Apron",
+                    description: "Personalized design professional cooking apron",
+                    price: "¥79-129",
+                    relevance: "High"
+                });
+            }
+            
+            if (age === 'child') {
+                ideas.push({
+                    product: "Cartoon Custom Pillow",
+                    description: "Soft pillow with child's favorite cartoon character",
+                    price: "¥59-99",
+                    relevance: "High"
+                });
+            }
+            
+            if (age === 'teen') {
+                ideas.push({
+                    product: "Fashion Custom T-shirt",
+                    description: "Custom T-shirt that showcases personality",
+                    price: "¥69-119",
+                    relevance: "High"
+                });
+            }
+            
+            if (occasion === 'birthday') {
+                ideas.push({
+                    product: "Birthday Theme Gift Set",
+                    description: "Beautiful set of multiple personalized gifts",
+                    price: "¥199-399",
+                    relevance: "High"
+                });
+            }
+            
+            // If no interest-based suggestions, provide general suggestions
+            if (ideas.length === 0) {
+                ideas.push({
+                    product: "Personalized Custom Blanket",
+                    description: "Comfortable and warm personalized blanket, suitable for all ages",
+                    price: "¥159-259",
+                    relevance: "Medium"
+                });
+                
+                ideas.push({
+                    product: "Custom Mug",
+                    description: "Daily practical personalized mug",
+                    price: "¥39-69",
+                    relevance: "Medium"
+                });
+            }
+            
+            return ideas.slice(0, 5); // Return up to 5 suggestions
+        }
+        
+        function displayGiftIdeas(giftIdeas) {
+            const container = document.getElementById('giftIdeasContainer');
+            const resultsSection = document.getElementById('resultsSection');
+            
+            let html = '<div class="gift-ideas-grid">';
+            
+            giftIdeas.forEach(idea => {
+                html += `
+                <div class="gift-idea-card">
+                    <h3>${idea.product}</h3>
+                    <p>${idea.description}</p>
+                    <div class="idea-meta">
+                        <span class="price">Price: ${idea.price}</span>
+                        <span class="relevance">Relevance: ${idea.relevance}</span>
+                    </div>
+                    <a href="/products/" class="btn btn-sm">Learn More</a>
+                </div>
+                `;
+            });
+            
+            html += '</div>';
+            container.innerHTML = html;
+            resultsSection.classList.remove('hidden');
+            
+            // Scroll to results section
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // New search button event
+        document.getElementById('newSearchBtn').addEventListener('click', function() {
+            document.getElementById('giftGeneratorForm').reset();
+            document.getElementById('resultsSection').classList.add('hidden');
+        });
+        
+        // Interactive function: Click gift card to learn more
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('btn-sm')) {
+                alert('Redirecting to related product page...');
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Idea Generator - Tools - POD Gift Guide</title>
+    <meta name="description" content="Enter recipient information to get personalized gift recommendations. Making the selection of perfect gifts easier.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gift Idea Generator",
+      "description": "Enter recipient information to get personalized gift recommendations",
+      "applicationCategory": "Utilities",
+      "operatingSystem": "Any"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">POD Gift Guide</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/products/custom-blankets.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/guides/" class="nav-link">Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/tools/" class="nav-link active">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tool-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">Home</a> > <a href="/tools/">Tools</a> > Gift Idea Generator
+                </div>
+                <h1>Gift Idea Generator</h1>
+                <p>Enter recipient information to get personalized gift recommendations</p>
+            </div>
+        </section>
+
+        <section class="tool-content">
+            <div class="container">
+                <div class="tool-form-container">
+                    <div class="tool-form">
+                        <h2>Fill in Recipient Information</h2>
+                        <form id="giftGeneratorForm">
+                            <div class="form-group">
+                                <label for="recipientType">Recipient Type</label>
+                                <select id="recipientType" name="recipientType" required>
+                                    <option value="">Please Select</option>
+                                    <option value="family">Family</option>
+                                    <option value="friend">Friend</option>
+                                    <option value="colleague">Colleague</option>
+                                    <option value="partner">Partner</option>
+                                    <option value="child">Child</option>
+                                    <option value="pet">Pet</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="relationship">Specific Relationship</label>
+                                <select id="relationship" name="relationship" required>
+                                    <option value="">Please Select</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="grandparent">Grandparent</option>
+                                    <option value="spouse">Spouse</option>
+                                    <option value="child">Child</option>
+                                    <option value="bestFriend">Best Friend</option>
+                                    <option value="coworker">Coworker</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age Range</label>
+                                <select id="age" name="age" required>
+                                    <option value="">Please Select</option>
+                                    <option value="child">Child (0-12 years)</option>
+                                    <option value="teen">Teen (13-19 years)</option>
+                                    <option value="youngAdult">Young Adult (20-35 years)</option>
+                                    <option value="adult">Adult (36-59 years)</option>
+                                    <option value="senior">Senior (60+ years)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interests">Interests (Multiple Selection)</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                                    <label><input type="checkbox" name="interests" value="music"> Music</label>
+                                    <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                                    <label><input type="checkbox" name="interests" value="cooking"> Cooking</label>
+                                    <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+                                    <label><input type="checkbox" name="interests" value="art"> Art</label>
+                                    <label><input type="checkbox" name="interests" value="tech"> Tech</label>
+                                    <label><input type="checkbox" name="interests" value="pets"> Pets</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion" name="occasion" required>
+                                    <option value="">Please Select</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="holiday">Holiday</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="babyShower">Baby Shower</option>
+                                    <option value="condolence">Condolence</option>
+                                    <option value="thankYou">Thank You</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget" required>
+                                    <option value="">Please Select</option>
+                                    <option value="low">Economy (¥50-150)</option>
+                                    <option value="medium">Mid-range (¥150-300)</option>
+                                    <option value="high">Premium (¥300-500)</option>
+                                    <option value="premium">Luxury (¥500+)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Generate Gift Ideas</button>
+                        </form>
+                    </div>
+
+                    <div class="tool-results hidden" id="resultsSection">
+                        <h2>Gift Recommendations for You</h2>
+                        <div id="giftIdeasContainer">
+                            <!-- Results will be populated here -->
+                        </div>
+                        <button id="newSearchBtn" class="btn btn-secondary">New Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-examples">
+            <div class="container">
+                <h2>Usage Examples</h2>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h3>Example 1</h3>
+                        <p><strong>Recipient:</strong> Young female friend, loves music and art</p>
+                        <p><strong>Occasion:</strong> Birthday</p>
+                        <p><strong>Recommendation:</strong> Personalized music-themed mug, custom art-style T-shirt</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Example 2</h3>
+                        <p><strong>Recipient:</strong> Middle-aged father, enjoys cooking</p>
+                        <p><strong>Occasion:</strong> Father's Day</p>
+                        <p><strong>Recommendation:</strong> Custom apron, personalized dinnerware set</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Example 3</h3>
+                        <p><strong>Recipient:</strong> Elderly mother, loves traveling</p>
+                        <p><strong>Occasion:</strong> Anniversary</p>
+                        <p><strong>Recommendation:</strong> Travel-themed photo album, personalized blanket</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>POD Gift Guide</h3>
+                        <p>Providing you with professional personalized custom gift suggestions and guides</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/products/">Products</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Product Categories</h4>
+                        <ul>
+                            <li><a href="/products/custom-blankets.html">Custom Blankets</a></li>
+                            <li><a href="/products/custom-pillows.html">Custom Pillows</a></li>
+                            <li><a href="/products/custom-tshirts.html">Custom T-shirts</a></li>
+                            <li><a href="/products/custom-mugs.html">Custom Mugs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <p>Email: contact@podgiftguide.com</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 POD Gift Guide. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('giftGeneratorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const recipientType = document.getElementById('recipientType').value;
+            const relationship = document.getElementById('relationship').value;
+            const age = document.getElementById('age').value;
+            const occasion = document.getElementById('occasion').value;
+            const budget = document.getElementById('budget').value;
+            
+            // Get interests
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
+                                  .map(cb => cb.value);
+            
+            // Generate gift suggestions
+            const giftIdeas = generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget);
+            
+            // Display results
+            displayGiftIdeas(giftIdeas);
+        });
+        
+        function generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget) {
+            // This is the gift suggestion logic, simplified version
+            const ideas = [];
+            
+            // Generate suggestions based on different conditions
+            if (interests.includes('music')) {
+                ideas.push({
+                    product: "Custom Music Theme Mug",
+                    description: "Mug with favorite song lyrics or musician image",
+                    price: "¥45-89",
+                    relevance: "High"
+                });
+            }
+            
+            if (interests.includes('travel')) {
+                ideas.push({
+                    product: "Personalized Travel Blanket",
+                    description: "Comfortable blanket with favorite travel destination photos or maps",
+                    price: "¥159-299",
+                    relevance: "High"
+                });
+            }
+            
+            if (interests.includes('cooking')) {
+                ideas.push({
+                    product: "Custom Cooking Apron",
+                    description: "Personalized design professional cooking apron",
+                    price: "¥79-129",
+                    relevance: "High"
+                });
+            }
+            
+            if (age === 'child') {
+                ideas.push({
+                    product: "Cartoon Custom Pillow",
+                    description: "Soft pillow with child's favorite cartoon character",
+                    price: "¥59-99",
+                    relevance: "High"
+                });
+            }
+            
+            if (age === 'teen') {
+                ideas.push({
+                    product: "Fashion Custom T-shirt",
+                    description: "Custom T-shirt that showcases personality",
+                    price: "¥69-119",
+                    relevance: "High"
+                });
+            }
+            
+            if (occasion === 'birthday') {
+                ideas.push({
+                    product: "Birthday Theme Gift Set",
+                    description: "Beautiful set of multiple personalized gifts",
+                    price: "¥199-399",
+                    relevance: "High"
+                });
+            }
+            
+            // If no interest-based suggestions, provide general suggestions
+            if (ideas.length === 0) {
+                ideas.push({
+                    product: "Personalized Custom Blanket",
+                    description: "Comfortable and warm personalized blanket, suitable for all ages",
+                    price: "¥159-259",
+                    relevance: "Medium"
+                });
+                
+                ideas.push({
+                    product: "Custom Mug",
+                    description: "Daily practical personalized mug",
+                    price: "¥39-69",
+                    relevance: "Medium"
+                });
+            }
+            
+            return ideas.slice(0, 5); // Return up to 5 suggestions
+        }
+        
+        function displayGiftIdeas(giftIdeas) {
+            const container = document.getElementById('giftIdeasContainer');
+            const resultsSection = document.getElementById('resultsSection');
+            
+            let html = '<div class="gift-ideas-grid">';
+            
+            giftIdeas.forEach(idea => {
+                html += `
+                <div class="gift-idea-card">
+                    <h3>${idea.product}</h3>
+                    <p>${idea.description}</p>
+                    <div class="idea-meta">
+                        <span class="price">Price: ${idea.price}</span>
+                        <span class="relevance">Relevance: ${idea.relevance}</span>
+                    </div>
+                    <a href="/products/" class="btn btn-sm">Learn More</a>
+                </div>
+                `;
+            });
+            
+            html += '</div>';
+            container.innerHTML = html;
+            resultsSection.classList.remove('hidden');
+            
+            // Scroll to results section
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // New search button event
+        document.getElementById('newSearchBtn').addEventListener('click', function() {
+            document.getElementById('giftGeneratorForm').reset();
+            document.getElementById('resultsSection').classList.add('hidden');
+        });
+        
+        // Interactive function: Click gift card to learn more
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('btn-sm')) {
+                alert('Redirecting to related product page...');
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>礼品创意生成器 - 实用工具 - POD礼品指南</title>
+    <meta name="description" content="输入接收者信息，获得个性化的礼品创意建议。让选择完美礼品变得更加简单。">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "礼品创意生成器",
+      "description": "输入接收者信息，获得个性化的礼品创意建议",
+      "applicationCategory": "Utilities",
+      "operatingSystem": "Any"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">POD礼品指南</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/products/custom-blankets.html" class="nav-link">产品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog/" class="nav-link">博客</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/guides/" class="nav-link">指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/tools/" class="nav-link active">工具</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tool-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">首页</a> > <a href="/tools/">实用工具</a> > 礼品创意生成器
+                </div>
+                <h1>礼品创意生成器</h1>
+                <p>输入接收者信息，获得个性化的礼品创意建议</p>
+            </div>
+        </section>
+
+        <section class="tool-content">
+            <div class="container">
+                <div class="tool-form-container">
+                    <div class="tool-form">
+                        <h2>填写接收者信息</h2>
+                        <form id="giftGeneratorForm">
+                            <div class="form-group">
+                                <label for="recipientType">接收者类型</label>
+                                <select id="recipientType" name="recipientType" required>
+                                    <option value="">请选择</option>
+                                    <option value="family">家人</option>
+                                    <option value="friend">朋友</option>
+                                    <option value="colleague">同事</option>
+                                    <option value="partner">伴侣</option>
+                                    <option value="child">孩子</option>
+                                    <option value="pet">宠物</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="relationship">具体关系</label>
+                                <select id="relationship" name="relationship" required>
+                                    <option value="">请选择</option>
+                                    <option value="parent">父母</option>
+                                    <option value="sibling">兄弟姐妹</option>
+                                    <option value="grandparent">祖父母</option>
+                                    <option value="spouse">配偶</option>
+                                    <option value="child">子女</option>
+                                    <option value="bestFriend">挚友</option>
+                                    <option value="coworker">同事</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">年龄范围</label>
+                                <select id="age" name="age" required>
+                                    <option value="">请选择</option>
+                                    <option value="child">儿童 (0-12岁)</option>
+                                    <option value="teen">青少年 (13-19岁)</option>
+                                    <option value="youngAdult">青年 (20-35岁)</option>
+                                    <option value="adult">中年 (36-59岁)</option>
+                                    <option value="senior">老年 (60岁以上)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interests">兴趣爱好 (可多选)</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests" value="sports"> 运动</label>
+                                    <label><input type="checkbox" name="interests" value="music"> 音乐</label>
+                                    <label><input type="checkbox" name="interests" value="reading"> 阅读</label>
+                                    <label><input type="checkbox" name="interests" value="cooking"> 烹饪</label>
+                                    <label><input type="checkbox" name="interests" value="travel"> 旅行</label>
+                                    <label><input type="checkbox" name="interests" value="art"> 艺术</label>
+                                    <label><input type="checkbox" name="interests" value="tech"> 科技</label>
+                                    <label><input type="checkbox" name="interests" value="pets"> 宠物</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occasion">场合</label>
+                                <select id="occasion" name="occasion" required>
+                                    <option value="">请选择</option>
+                                    <option value="birthday">生日</option>
+                                    <option value="anniversary">周年纪念</option>
+                                    <option value="holiday">节日</option>
+                                    <option value="graduation">毕业</option>
+                                    <option value="wedding">婚礼</option>
+                                    <option value="babyShower">婴儿洗礼</option>
+                                    <option value="condolence">慰问</option>
+                                    <option value="thankYou">感谢</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">预算范围</label>
+                                <select id="budget" name="budget" required>
+                                    <option value="">请选择</option>
+                                    <option value="low">经济型 (¥50-150)</option>
+                                    <option value="medium">中档 (¥150-300)</option>
+                                    <option value="high">高档 (¥300-500)</option>
+                                    <option value="premium">豪华 (¥500以上)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">生成礼品创意</button>
+                        </form>
+                    </div>
+
+                    <div class="tool-results hidden" id="resultsSection">
+                        <h2>为您推荐的礼品创意</h2>
+                        <div id="giftIdeasContainer">
+                            <!-- Results will be populated here -->
+                        </div>
+                        <button id="newSearchBtn" class="btn btn-secondary">重新搜索</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-examples">
+            <div class="container">
+                <h2>使用示例</h2>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h3>例子 1</h3>
+                        <p><strong>接收者:</strong> 青年女性朋友，喜欢音乐和艺术</p>
+                        <p><strong>场合:</strong> 生日</p>
+                        <p><strong>推荐:</strong> 个性化音乐主题马克杯、定制艺术风格T恤</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>例子 2</h3>
+                        <p><strong>接收者:</strong> 中年父亲，喜欢烹饪</p>
+                        <p><strong>场合:</strong> 父亲节</p>
+                        <p><strong>推荐:</strong> 定制围裙、个性化餐具套装</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>例子 3</h3>
+                        <p><strong>接收者:</strong> 老年母亲，喜欢旅行</p>
+                        <p><strong>场合:</strong> 周年纪念</p>
+                        <p><strong>推荐:</strong> 旅行主题相册、个性化毯子</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>POD礼品指南</h3>
+                        <p>为您提供专业的个性化定制礼品建议和指南</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>快速链接</h4>
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/products/">产品</a></li>
+                            <li><a href="/blog/">博客</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>产品类别</h4>
+                        <ul>
+                            <li><a href="/products/custom-blankets.html">定制毯子</a></li>
+                            <li><a href="/products/custom-pillows.html">定制枕头</a></li>
+                            <li><a href="/products/custom-tshirts.html">定制T恤</a></li>
+                            <li><a href="/products/custom-mugs.html">定制马克杯</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>联系信息</h4>
+                        <p>邮箱: contact@podgiftguide.com</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 POD礼品指南. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('giftGeneratorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const recipientType = document.getElementById('recipientType').value;
+            const relationship = document.getElementById('relationship').value;
+            const age = document.getElementById('age').value;
+            const occasion = document.getElementById('occasion').value;
+            const budget = document.getElementById('budget').value;
+            
+            // 获取兴趣爱好
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
+                                  .map(cb => cb.value);
+            
+            // 生成礼品建议
+            const giftIdeas = generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget);
+            
+            // 显示结果
+            displayGiftIdeas(giftIdeas);
+        });
+        
+        function generateGiftIdeas(recipientType, relationship, age, interests, occasion, budget) {
+            // 这里是礼品建议的逻辑，简化版本
+            const ideas = [];
+            
+            // 根据不同条件生成建议
+            if (interests.includes('music')) {
+                ideas.push({
+                    product: "定制音乐主题马克杯",
+                    description: "印有最喜欢歌曲歌词或音乐家形象的马克杯",
+                    price: "¥45-89",
+                    relevance: "高"
+                });
+            }
+            
+            if (interests.includes('travel')) {
+                ideas.push({
+                    product: "个性化旅行毯子",
+                    description: "印有最喜欢旅游地点照片或地图的舒适毯子",
+                    price: "¥159-299",
+                    relevance: "高"
+                });
+            }
+            
+            if (interests.includes('cooking')) {
+                ideas.push({
+                    product: "定制烹饪围裙",
+                    description: "个性化设计的专业烹饪围裙",
+                    price: "¥79-129",
+                    relevance: "高"
+                });
+            }
+            
+            if (age === 'child') {
+                ideas.push({
+                    product: "卡通定制枕头",
+                    description: "印有孩子最喜欢卡通角色的柔软枕头",
+                    price: "¥59-99",
+                    relevance: "高"
+                });
+            }
+            
+            if (age === 'teen') {
+                ideas.push({
+                    product: "时尚定制T恤",
+                    description: "展现个性的定制T恤",
+                    price: "¥69-119",
+                    relevance: "高"
+                });
+            }
+            
+            if (occasion === 'birthday') {
+                ideas.push({
+                    product: "生日主题礼品套装",
+                    description: "包含多种个性化礼品的精美套装",
+                    price: "¥199-399",
+                    relevance: "高"
+                });
+            }
+            
+            // 如果没有基于兴趣的建议，则提供通用建议
+            if (ideas.length === 0) {
+                ideas.push({
+                    product: "个性化定制毯子",
+                    description: "舒适温暖的个性化毯子，适合所有年龄段",
+                    price: "¥159-259",
+                    relevance: "中"
+                });
+                
+                ideas.push({
+                    product: "定制马克杯",
+                    description: "日常实用的个性化马克杯",
+                    price: "¥39-69",
+                    relevance: "中"
+                });
+            }
+            
+            return ideas.slice(0, 5); // 返回最多5个建议
+        }
+        
+        function displayGiftIdeas(giftIdeas) {
+            const container = document.getElementById('giftIdeasContainer');
+            const resultsSection = document.getElementById('resultsSection');
+            
+            let html = '<div class="gift-ideas-grid">';
+            
+            giftIdeas.forEach(idea => {
+                html += `
+                <div class="gift-idea-card">
+                    <h3>${idea.product}</h3>
+                    <p>${idea.description}</p>
+                    <div class="idea-meta">
+                        <span class="price">价格: ${idea.price}</span>
+                        <span class="relevance">相关性: ${idea.relevance}</span>
+                    </div>
+                    <a href="/products/" class="btn btn-sm">了解更多</a>
+                </div>
+                `;
+            });
+            
+            html += '</div>';
+            container.innerHTML = html;
+            resultsSection.classList.remove('hidden');
+            
+            // 滚动到结果部分
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // 重新搜索按钮事件
+        document.getElementById('newSearchBtn').addEventListener('click', function() {
+            document.getElementById('giftGeneratorForm').reset();
+            document.getElementById('resultsSection').classList.add('hidden');
+        });
+        
+        // 互动功能：点击礼品卡了解更多
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('btn-sm')) {
+                alert('跳转到相关产品页面...');
+            }
+        });
+    </script>
+</body>
+</html>

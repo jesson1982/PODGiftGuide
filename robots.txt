@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://your-pod-site.github.io/sitemap.xmlUser-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+Allow: /
+
+Sitemap: https://your-pod-site.github.io/sitemap.xml

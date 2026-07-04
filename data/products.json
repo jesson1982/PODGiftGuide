@@ -1,0 +1,174 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "定制毯子",
+      "category": "blankets",
+      "title": "个性化定制毯子",
+      "description": "舒适温暖的个性化毯子，完美纪念特殊时刻",
+      "price": 159.00,
+      "currency": "CNY",
+      "images": [
+        "/assets/images/products/custom-blankets.jpg",
+        "/assets/images/products/custom-blankets-main.jpg",
+        "/assets/images/products/custom-blankets-1.jpg",
+        "/assets/images/products/custom-blankets-2.jpg",
+        "/assets/images/products/custom-blankets-3.jpg"
+      ],
+      "availableSizes": [
+        "100cm x 150cm (儿童)",
+        "150cm x 200cm (标准)",
+        "180cm x 220cm (加大)",
+        "200cm x 250cm (特大)"
+      ],
+      "availableMaterials": [
+        "法兰绒 (柔软保暖)",
+        "珊瑚绒 (超柔触感)",
+        "羊羔绒 (豪华质感)",
+        "有机棉 (环保选择)"
+      ],
+      "features": [
+        "高品质印刷技术，图案持久不褪色",
+        "柔软舒适，适合敏感肌肤",
+        "机洗友好，易于护理",
+        "环保染料，安全无害",
+        "双面可用，设计美观"
+      ],
+      "rating": 4.8,
+      "reviewCount": 1200,
+      "url": "/products/custom-blankets.html",
+      "seoKeywords": ["定制毯子", "个性化礼品", "纪念品", "家庭照片", "宠物照片"]
+    },
+    {
+      "id": 2,
+      "name": "定制枕头",
+      "category": "pillows",
+      "title": "个性化定制枕头",
+      "description": "独特的设计，为您的家增添个性色彩",
+      "price": 79.00,
+      "currency": "CNY",
+      "images": [
+        "/assets/images/products/custom-pillows.jpg",
+        "/assets/images/products/pillow-front.jpg",
+        "/assets/images/products/pillow-back.jpg",
+        "/assets/images/products/pillow-side.jpg"
+      ],
+      "availableSizes": [
+        "16英寸 × 16英寸",
+        "18英寸 × 18英寸",
+        "20英寸 × 20英寸",
+        "24英寸 × 16英寸"
+      ],
+      "availableMaterials": [
+        "纯棉",
+        "亚麻",
+        "聚酯纤维",
+        "天鹅绒"
+      ],
+      "availableFillings": [
+        "聚酯纤维填充",
+        "羽绒填充",
+        "记忆棉填充"
+      ],
+      "features": [
+        "高品质材料制作，确保舒适和耐用性",
+        "完全可定制，创造独一无二的枕头",
+        "易清洗设计，方便清洁和维护",
+        "快速发货，标准订单3-5个工作日内发货"
+      ],
+      "rating": 4.6,
+      "reviewCount": 850,
+      "url": "/products/custom-pillows.html",
+      "seoKeywords": ["定制枕头", "个性化礼品", "家居装饰", "照片枕头"]
+    },
+    {
+      "id": 3,
+      "name": "定制T恤",
+      "category": "tshirts",
+      "title": "个性化定制T恤",
+      "description": "表达个性，展示风格的最佳选择",
+      "price": 89.00,
+      "currency": "CNY",
+      "images": [
+        "/assets/images/products/custom-tshirts.jpg",
+        "/assets/images/products/custom-tshirts-main.jpg",
+        "/assets/images/products/custom-tshirts-1.jpg",
+        "/assets/images/products/custom-tshirts-2.jpg",
+        "/assets/images/products/custom-tshirts-3.jpg"
+      ],
+      "availableStyles": [
+        "圆领短袖",
+        "圆领长袖",
+        "V领短袖",
+        "V领长袖",
+        "POLO衫"
+      ],
+      "availableColors": [
+        "白色",
+        "黑色",
+        "红色",
+        "蓝色",
+        "黄色"
+      ],
+      "availableSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "features": [
+        "选用优质棉质面料，透气舒适",
+        "专业印刷技术，图案持久不褪色",
+        "多款版型可选，适合不同身材",
+        "环保染料，安全无害",
+        "多次洗涤不易变形"
+      ],
+      "rating": 4.7,
+      "reviewCount": 950,
+      "url": "/products/custom-tshirts.html",
+      "seoKeywords": ["定制T恤", "个性化服装", "照片T恤", "团体服装"]
+    },
+    {
+      "id": 4,
+      "name": "定制马克杯",
+      "category": "mugs",
+      "title": "个性化定制马克杯",
+      "description": "每天使用的个性化用品，让生活更有趣",
+      "price": 45.00,
+      "currency": "CNY",
+      "images": [
+        "/assets/images/products/custom-mugs.jpg",
+        "/assets/images/products/mug-front.jpg",
+        "/assets/images/products/mug-side.jpg",
+        "/assets/images/products/mug-top.jpg"
+      ],
+      "availableCapacities": [
+        "11盎司 (约325ml)",
+        "15盎司 (约444ml)"
+      ],
+      "availableColors": [
+        "白色",
+        "黑色",
+        "红色",
+        "蓝色"
+      ],
+      "availableHandles": [
+        "标准把手",
+        "双边把手",
+        "无把手"
+      ],
+      "features": [
+        "优质陶瓷制作，安全无毒，经久耐用",
+        "高温固化印刷技术，图案持久鲜艳，不易脱落",
+        "微波安全，可用于微波炉加热，方便实用",
+        "洗碗机安全，可放入洗碗机清洗，省时省力"
+      ],
+      "rating": 4.5,
+      "reviewCount": 1500,
+      "url": "/products/custom-mugs.html",
+      "seoKeywords": ["定制马克杯", "个性化杯具", "照片马克杯", "办公用品"]
+    }
+  ]
+}
