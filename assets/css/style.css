@@ -1402,3 +1402,12 @@ li {
 .product-image { width: 100%; border-radius: 8px; display: block; }
 .recommendation-details, .similar-products, .related-guides { max-width: 860px; margin: 1.5rem auto; padding: 0 1rem; }
 .similar-products h2, .related-guides h2 { color: #343a40; font-size: 1.25rem; }
+
+
+/* ===== layout-compat: faq + featured image ===== */
+.faq-section { margin: 2rem 0 1rem; }
+.faq-item { margin: 0 0 1.1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0,0,0,.08); }
+.faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+.faq-item h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+.faq-item p { margin: 0; }
+.featured-img { width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; display: block; }
